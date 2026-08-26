@@ -1,7 +1,8 @@
 // Input - information entered by the user for processing.
 // Output - result displayed to the user after processing the input.
 // cout displays output with <<.
-// cin takes input from the user with >>.
+// cin takes input from the user with >>,reads until whitespace
+// getline(cin, variable) takes input from the user including spaces.
 
 #include <iostream>
 using namespace std;
