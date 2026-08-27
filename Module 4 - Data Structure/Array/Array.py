@@ -3,7 +3,11 @@ so it is not exactly the same as a C++ fixed array.
 Python lists can grow dynamically.
 
 keyword
-len() - returns the number of items in a list
+* len() - returns the number of items in a list
+* append() - adds an item to the end of the list
+* insert() - adds an item at the specified index
+* delete() - removes an item at the specified index
+* pop() - removes and returns the item at the specified index
 """
 
 arr = [10, 20, 30, 40, 50]  # list of size 5
@@ -43,7 +47,7 @@ for i in range(len(arr)):
 print()
 
 # insert an element
-print("Inserting an element (25) at index 2: ")
+print("Inserting an elemen at index 2: ")
 arr.insert(2, 25)
 print(arr)
 print()
@@ -52,3 +56,19 @@ print()
 print("Deleting an element at index 2: ")
 del arr[2]
 print(arr)
+
+# add an element at the end
+print("Adding an element at the end: ")
+arr.append(60)
+print(arr)
+print()
+
+# removing an element at a specific index
+print("Removing an element at index 1: ")
+arr.pop(1)
+print(arr)
+print()
+
+# list with different data types
+mixed_list = [1, "Hello", 3.14, True]
+print("List with different data types: ", mixed_list)

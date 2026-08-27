@@ -4,7 +4,11 @@ In C++, the vector class is a dynamic array that can change its size during runt
 It provides various member functions to manage the elements, such as adding, removing, and accessing elements. 
 The vector class is part of the Standard Template Library (STL) and is defined in the <vector> header file.
 
-Key Conceptsvector
+Key Concepts
+Vector is a sequence container that encapsulates dynamic size arrays.
+Vector is a template class, which means it can hold elements of any data type.
+vector store elements in contiguous memory locations, allowing for efficient access and manipulation of elements.
+Vector store same type of elements, and the type is specified when the vector is declared.
 Vector use indexing starting from 0.
 Vector can grow dynamically.
 Access by index is typically O(1).
