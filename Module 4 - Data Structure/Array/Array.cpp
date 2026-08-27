@@ -1,5 +1,14 @@
 /* Traditional C++ arrays have a fixed size.
 <datatype> <array_name>[<size>] = {<value1>, <value2>, <value3>, ...};
+
+operations on arrays:
+1. size of array - sizeof(array_name)/sizeof(array_name[0])
+* sizeof(array_name) gives the total size of the array in bytes.
+* sizeof(array_name[0]) gives the size of a single element in the array in bytes
+
+For using specific Operations on arrays,
+use array library,
+* #include<array>
 */
 
 # include<iostream>
@@ -16,6 +25,10 @@ Values:  10  20  30  40  50
 */
 
 // Operation on Array
+// size of array
+cout << "Size of the array: " << endl;
+cout << sizeof(arr)/sizeof(arr[0]) << endl;  // Output: 5
+
 // Traversal
 cout << "\nTraversal of Array elements: " << endl;
 for(int i = 0; i < 5; i++){

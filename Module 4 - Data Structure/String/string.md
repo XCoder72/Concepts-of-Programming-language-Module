@@ -5,14 +5,14 @@ A string is a sequence of characters used to store text.
  H e l l o
  0 1 2 3 4
 
-* Common String Operations
-> Length 
+* Common String Operations.
+> Length - No of charaters in a string.
 > Access - Strings are indexed just like arrays.
-> Concatenate
-> Character traversal
-> Substring
-> Find
-> Convert case
+> Concatenate - Adding of String.
+> Character traversal - traverse through.
+> Substring - string from string.
+> Find - character from string.
+> Convert case - covert string into upper/lower string.
 
 * Practice Problem:
 Easy
