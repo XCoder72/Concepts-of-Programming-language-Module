@@ -1,14 +1,23 @@
-string = input("Enter String :- ")
+string = input("Enter String: ")
+
 Reverse_string = []
-ReverseString = ''
+ReverseString = ""
+
 
 def reverse_string(string):
-  for i in range(0,len(string)):
-    Reverse_string.append(string[i])
 
-  for i in range(0,len(string)):
-    Reverse_string[-1] += 'ReverseString'
-    Reverse_string.pop()
+    # Push characters into stack
+    for i in range(len(string)):
+        Reverse_string.append(string[i])
+
+    # Pop characters from stack
+    global ReverseString
+
+    while Reverse_string:
+        ReverseString += Reverse_string.pop()
+
 
 reverse_string(string)
-print(ReverseString)
+
+print("Reverse String:", ReverseString)
+    
